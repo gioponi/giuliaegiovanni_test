@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giulia & Giovanni | 05.09.2026</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Variabili Colore/Design */
+        :root {
+            --color-ecru: #F5F5DC;          /* Sfondo Pagina */
+            --color-salvia: #8FBC8F;        /* Verde Salvia (Accento) */
+            --color-text-dark: #333333;
+            --font-calligraphy: 'Cormorant Garamond', serif; 
+            --font-main: 'Lato', sans-serif;
+        }
+
+        /* RESET e Stili Base */
+        body {
+            font-family: var(--font-main);
+            color: var(--color-text-dark);
+            background-color: var(--color-ecru);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Contenitore principale per centrare il contenuto */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Tipi di Titolo */
+        h1, h2, h3 {
+            font-family: var(--font-calligraphy);
+            color: var(--color-salvia);
+            text-align: center;
+        }
+        h1 {
+            font-size: 4em;
+            margin-bottom: 0.1em;
+            letter-spacing: 2px;
+        }
+        h2 {
+            font-size: 2.2em;
+            margin-top: 0;
+            border-bottom: 2px solid var(--color-salvia);
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+        h3 {
+             font-size: 1.6em;
+             margin-bottom: 0.5em;
+        }
+
+        /* Pulsanti e Link */
+        .btn {
+            display: inline-block;
+            background-color: var(--color-salvia);
+            color: var(--color-ecru);
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+            font-family: var(--font-main);
+        }
+        .btn:hover {
+            background-color: #7B9B7B; /* Salvia leggermente più scuro */
+        }
+        a {
+            color: var(--color-salvia);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Sezioni */
+        .section {
+            padding: 40px 0;
+            border-bottom: 1px solid rgba(143, 188, 143, 0.3); /* Linea salvia soft */
+            text-align: center;
+        }
+        .section-content {
+            text-align: left;
+            margin: 0 auto;
+            max-width: 700px;
+        }
+        .logistics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .logistics-card {
+            background-color: #FFFFF0; /* quasi bianco */
+            padding: 20px;
+            border-left: 3px solid var(--color-salvia);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        /* Navigazione (Simple Top Menu) */
+        nav {
+            background-color: rgba(245, 245, 220, 0.9); /* Ecru leggermente trasparente */
+            text-align: center;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid var(--color-salvia);
+        }
+        nav a {
+            margin: 0 15px;
+            color: var(--color-salvia);
+            font-weight: bold;
+            font-family: var(--font-main);
+            text-transform: uppercase;
+        }
+        
+        /* Elementi decorativi */
+        .decoration {
+            color: var(--color-salvia);
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="container">
+            <a href="#home">Home</a>
+            <a href="#programma">Programma</a>
+            <a href="#rsvp">RSVP</a>
+            <a href="#logistica">Logistica</a>
+            <a href="#regali">Regali</a>
+            <a href="#maremma">Maremma</a>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <section id="home" class="section">
+            <h1>Giulia & Giovanni</h1>
+            <p style="font-size: 1.4em; color: #555;">
+                <span class="decoration">🌿</span> 05 Settembre 2026 | Montemerano (GR) <span class="decoration">🌿</span>
+            </p>
+            <p style="max-width: 600px; margin: 20px auto; font-size: 1.1em;">
+                Benvenuti sulla nostra webapp ufficiale! Siamo entusiasti di condividere con voi ogni dettaglio del nostro matrimonio in Maremma. Qui troverete tutte le informazioni sul programma, i suggerimenti per il soggiorno e cosa visitare nei dintorni. Vi aspettiamo per celebrare il nostro amore!
+            </p>
+            <a href="#programma" class="btn">Scopri il Programma</a>
+        </section>
+
+        <section id="programma" class="section">
+            <h2>Il Nostro Giorno</h2>
+            
+            <div class="logistics-grid">
+                
+                <div class="logistics-card">
+                    <h3>La Cerimonia</h3>
+                    <p style="color: #666;">La Promessa in Piazza Castello</p>
+                    <p>Vi invitiamo a unirvi a noi per la cerimonia civile nel cuore suggestivo del borgo antico di Montemerano.</p>
+                    <ul>
+                        <li><strong>Ora:</strong> Ore 17:00</li>
+                        <li><strong>Luogo:</strong> Piazza Castello, 1, 58014 Montemerano GR</li>
+                    </ul>
+                    <a href="https://maps.app.goo.gl/INSERISCI_MAPPA_CERIMONIA" target="_blank" class="btn">Apri la Mappa</a>
+                </div>
+
+                <div class="logistics-card">
+                    <h3>Il Ricevimento</h3>
+                    <p style="color: #666;">Festeggiamenti a Villa Acquaviva</p>
+                    <p>Dopo la cerimonia, ci sposteremo per un aperitivo e una cena immersi nella bellezza della campagna toscana.</p>
+                    <ul>
+                        <li><strong>Ora:</strong> Ore 18:30</li>
+                        <li><strong>Luogo:</strong> Villa Acquaviva, Via Scansanese, 58014 Montemerano GR</li>
+                    </ul>
+                     <a href="https://maps.app.goo.gl/INSERISCI_MAPPA_RICEVIMENTO" target="_blank" class="btn">Apri la Mappa</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="rsvp" class="section">
+            <h2>Conferma di Presenza (RSVP)</h2>
+            <div class="section-content">
+                <p>Per aiutarci nell'organizzazione, vi preghiamo di confermare la vostra presenza entro e non oltre il <strong>30 Giugno 2026</strong> tramite il modulo sottostante.</p>
+                <p style="color: #666; font-style: italic;">(Nel modulo potrete specificare anche allergie/intolleranze o richieste speciali per la cena.)</p>
+                <p style="text-align: center;">
+                    <a href="INSERISCI_LINK_AL_MODULO_GOOGLE_O_TYPEFORM" target="_blank" class="btn">Compila il Modulo RSVP</a>
+                </p>
+            </div>
+        </section>
+
+        <section id="logistica" class="section">
+            <h2>Logistica & Soggiorno</h2>
+            <div class="section-content">
+                
+                <h3>Trasporti e Parcheggi</h3>
+                <p>Il parcheggio più comodo per raggiungere Piazza Castello è il **Parcheggio Pubblico di Via del Fiume** (a 5 minuti a piedi dal centro storico).</p>
+                <p><strong>Servizio Navetta:</strong> Un servizio navetta sarà attivo dalle ore 01:00 alle 03:00 per riportare gli ospiti al Parcheggio Pubblico e alle strutture ricettive convenzionate.</p>
+
+                <h3>Dove Soggiornare</h3>
+                <p>Abbiamo selezionato alcune strutture ricettive vicine. Potete richiedere un prezzo convenzionato menzionando il nostro matrimonio.</p>
+                <ul>
+                    <li><a href="#">Agriturismo Le Vigne</a> (Rustico e vicino alla Villa)</li>
+                    <li><a href="#">Hotel Terme</a> (Lusso e benessere)</li>
+                    <li><a href="#">B&B Il Glicine</a> (Intimo e nel centro storico)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="regali" class="section">
+            <h2>Regali & Lista Nozze</h2>
+            <div class="section-content">
+                <p>La cosa più importante per noi è la vostra presenza. Tuttavia, se desiderate farci un regalo, un contributo per la nostra luna di miele in **Giappone** sarebbe il dono più gradito!</p>
+                
+                <div class="logistics-card" style="text-align: center; border-left: 3px solid #ccc; padding: 15px;">
+                    <p style="font-size: 1.1em; font-weight: bold; color: var(--color-salvia);">IBAN:</p>
+                    <p style="font-family: monospace; font-size: 1.2em;">IT99 Z 12345 67890 000000001234</p>
+                    <p style="font-size: 0.9em; color: #666;">Intestato a: Giulia Rossi / Giovanni Bianchi</p>
+                    <p style="font-size: 0.9em; color: #666;">Causale Consigliata: Regalo Matrimonio Giulia & Giovanni</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="maremma" class="section" style="border-bottom: none;">
+            <h2>Scopri la Maremma</h2>
+            <div class="section-content">
+                <p>Se desiderate prolungare il vostro soggiorno, la Maremma offre meraviglie uniche. Ecco qualche idea per sfruttare al meglio il tempo:</p>
+                <ul>
+                    <li><strong>Relax alle Terme:</strong> Le <a href="#">Terme di Saturnia</a> sono a pochi chilometri e sono l'ideale per un pomeriggio di benessere.</li>
+                    <li><strong>Sapori e Vini:</strong> Visitate una delle innumerevoli cantine di **Morellino di Scansano** per una degustazione.</li>
+                    <li><strong>L'Argentario:</strong> Per gli amanti del mare, <a href="#">Porto Ercole e Porto Santo Stefano</a> offrono splendide passeggiate.</li>
+                    <li><strong>Passeggiata nel Tempo:</strong> Non perdete la vicina <a href="#">Pitigliano</a>, la città del tufo.</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <footer style="text-align: center; padding: 20px; font-size: 0.8em; color: #666; background-color: #eee;">
+        Ci vediamo il 05.09.2026!
+    </footer>
+
+</body>
+</html>
