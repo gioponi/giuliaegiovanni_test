@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giulia & Giovanni | 05.09.2026</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     
     <style>
         /* Variabili Colore/Design */
@@ -128,6 +128,14 @@
             color: var(--color-salvia);
             font-size: 1.2em;
         }
+
+        .ampersand {
+    font-family: 'Allura', cursive;
+    font-size: 0.8em; /* La rendiamo leggermente più piccola per proporzione */
+    color: var(--color-salvia);
+    margin: 0 10px;
+    font-style: normal; /* Evita che prenda l'italico del Playfair se applicato al padre */
+}
     </style>
 </head>
 <body>
@@ -146,7 +154,9 @@
     <div class="container">
 
         <section id="home" class="section">
-            <h1>Giulia & Giovanni</h1>
+            <h1 style="font-family: 'Playfair Display', serif;">
+    Giulia <span class="ampersand">&</span> Giovanni
+</h1>
             <p style="font-size: 1.4em; color: #555;">
                 <span class="decoration">🌿</span> 05 Settembre 2026 | Montemerano (GR) <span class="decoration">🌿</span>
             </p>
